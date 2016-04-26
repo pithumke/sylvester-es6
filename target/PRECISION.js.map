@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/PRECISION.js"],"names":[],"mappings":";;;;;AAAO,IAAM,gCAAY,IAAlB","file":"PRECISION.js","sourcesContent":["export const PRECISION = 1e-6;"]}

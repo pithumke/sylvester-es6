@@ -1,39 +1,13 @@
 # Sylvester
 
-Vector and Matrix math for JavaScript. [See the
-website](http://sylvester.jcoglan.com) for documentation.
+Fork of the famous Sylvester vector, matrix and geometry library.
 
+Please have a look at the [original author's website](http://sylvester.jcoglan.com) for documentation and credits.
 
-## Development
-
-Sylvester is built using `wake` and tested with `jstest`. Tests should run on
-all target platforms, including browsers, Node and other JS runtimes.
-
-Install the build tools:
-
-    $ npm install
-
-To build the library from source:
-
-    $ npm run build
-
-To test, run using various JS binaries and open the tests in the browser:
-
-    $ JS=(v8 node spidermonkey rhino narwhal ringo)
-    $ for js in "${JS[@]}"; do echo "$js" ; $js test/console.js ; echo $? ; done
-
-    $ cscript.exe test/console.js # on Windows
-
-    $ open test/browser.html
-
-To view the website locally:
-
-    $ bundle exec staticmatic preview site
-
-To build the static files for the website:
-
-    $ bundle exec staticmatic build site
-
+Major modifications:
+  - Rewriting in ES6
+  - Including [glUtils.js](https://github.com/mdn/webgl-examples/blob/gh-pages/tutorial/glUtils.js) (see [MDN tutorial](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Tutorial/Adding_2D_content_to_a_WebGL_context) for details)
+  - Putting curly braces on the next line where ever ES6 allows it.
 
 ## License
 

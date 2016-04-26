@@ -1,52 +1,40 @@
-{ "name"            : "sylvester"
-, "description"     : "Vector and Matrix math for JavaScript"
-, "homepage"        : "http://sylvster.jcoglan.com"
-, "author"          : "James Coglan <jcoglan@gmail.com> (http://jcoglan.com/)"
-, "keywords"        : ["vector", "matrix", "geometry", "math"]
-
-, "version"         : "0.2.0"
-, "engines"         : {"node": ">=0.4.0"}
-, "main"            : "./lib/sylvester"
-, "devDependencies" : {"jstest": "", "wake": ""}
-
-, "scripts"         : { "build" : "wake"
-                      , "test"  : "node test/console.js"
-                      }
-
-, "bugs"            : "http://github.com/jcoglan/sylvester/issues"
-
-, "licenses"        : [ { "type"    : "MIT"
-                        , "url"     : "http://www.opensource.org/licenses/mit-license.php"
-                        }
-                      ]
-
-, "repository"      : { "type"    : "git"
-                      , "url"     : "git://github.com/jcoglan/sylvester.git"
-                      }
-
-, "wake": {
-    "javascript": {
-      "sourceDirectory": "src",
-      "targetDirectory": "lib",
-      "builds": {
-        "src": {"digest": false, "minify": false},
-        "min": {"digest": false, "minify": true, "sourceMap": "src", "tag": "suffix"}
-      },
-      "targets": {
-        "sylvester": [
-          "sylvester",
-          "vector",
-          "matrix",
-          "line",
-          "line.segment",
-          "plane",
-          "polygon",
-          "polygon.vertex",
-          "linkedlist",
-          "exports"
-        ]
-      }
+{
+    "name": "sylvester-es6",
+    "version": "0.0.1",
+    "description": "Fork of the famous Sylvester vector, matrix and geometry library. Rewritten in ES6 and including the glUtils.js add-ons.",
+    "main": "target/Sylvester.js",
+    "directories":
+    {
+        "test": "test"
+    },
+    "scripts":
+    {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository":
+    {
+        "type": "git",
+        "url": "git+https://github.com/pithumke/sylvester.git"
+    },
+    "keywords":
+    [
+        "sylvester",
+        "glutils",
+        "matrix",
+        "vector",
+        "geometry",
+        "es6"
+    ],
+    "author": "Pit Humke",
+    "license": "MIT",
+    "bugs":
+    {
+        "url": "https://github.com/pithumke/sylvester/issues"
+    },
+    "homepage": "https://github.com/pithumke/sylvester#readme",
+    "devDependencies": {
+        "grunt": "^1.0.1",
+        "grunt-babel": "^6.0.0",
+        "babel-preset-es2015": "^6.6.0"
     }
-  }
 }
-
