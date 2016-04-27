@@ -1,5 +1,6 @@
 "use strict";
 
+//Classes
 export { CircularLinkedList } from "./CircularLinkedList";
 export { Line } from "./Line";
 export { LineSegment } from "./LineSegment";
@@ -10,4 +11,16 @@ export { Plane } from "./Plane";
 export { Polygon } from "./Polygon";
 export { Vector } from "./Vector";
 export { Vertex } from "./Vertex";
+
+//Utils
+export {
+	mht,
+	makeLookAt,
+	makeOrtho,
+	makePerspective,
+	makeFrustum,
+	makeOrtho
+} from "./Utils";
+
+//Library precision
 export { PRECISION } from "./PRECISION";

@@ -20,6 +20,7 @@ module.exports = function(grunt) {
                     "target/Vector.js": "src/Vector.js",
                     "target/Vertex.js": "src/Vertex.js",
                     "target/PRECISION.js": "src/PRECISION.js",
+                    "target/Utils.js": "src/Utils.js"
                 }
             }
         }

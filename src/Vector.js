@@ -377,6 +377,12 @@ export class Vector
         this.elements = (els.elements || els).slice();
         return this;
     }
+
+    //From glUtils.js
+    flatten ()
+    {
+        return this.elements;
+    }
 }
 
 Vector.Random = function(n)

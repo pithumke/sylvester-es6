@@ -356,6 +356,14 @@ var Vector = exports.Vector = function () {
             this.elements = (els.elements || els).slice();
             return this;
         }
+
+        //From glUtils.js
+
+    }, {
+        key: "flatten",
+        value: function flatten() {
+            return this.elements;
+        }
     }]);
 
     return Vector;
