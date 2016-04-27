@@ -7,6 +7,8 @@ Please have a look at the [original author's website](http://sylvester.jcoglan.c
 Major modifications:
   - Rewriting in ES6
   - Including [glUtils.js](https://github.com/mdn/webgl-examples/blob/gh-pages/tutorial/glUtils.js) (see [MDN tutorial](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Tutorial/Adding_2D_content_to_a_WebGL_context) for details)
+  - Removing shorthand notations ($M, $L, ...)
+  - Replacing "create"-functions with class constructors
   - Putting curly braces on the next line where ever ES6 allows it.
 
 ## License
