@@ -11,6 +11,8 @@ var _Vector = require("./Vector");
 
 var _Plane = require("./Plane");
 
+var _Line = require("./Line");
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var LineSegment = exports.LineSegment = function () {
@@ -140,7 +142,7 @@ var LineSegment = exports.LineSegment = function () {
             if (startPoint === null || endPoint === null) {
                 return null;
             }
-            this.line = new Line(startPoint, endPoint.subtract(startPoint));
+            this.line = new _Line.Line(startPoint, endPoint.subtract(startPoint));
             this.start = startPoint;
             this.end = endPoint;
             return this;

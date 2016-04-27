@@ -23,12 +23,24 @@ module.exports = function(grunt) {
                     "target/Utils.js": "src/Utils.js"
                 }
             }
+        },
+        "mochaTest": {
+            test: {
+                options: {
+                    reporter: 'spec',
+                    quiet: false,
+                    clearRequireCache: false,
+                    require: "babel-core/register"
+                },
+                src: ['test/**/*.js']
+            }
         }
     });
 
     grunt.loadNpmTasks("grunt-babel");
+    grunt.loadNpmTasks('grunt-mocha-test');
 
     grunt.registerTask("build", ["babel:target"]);
-    grunt.registerTask("test", []);
+    grunt.registerTask("test", ["build", "mochaTest:test"]);
 
 };

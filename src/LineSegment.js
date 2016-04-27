@@ -2,6 +2,7 @@
 
 import { Vector } from "./Vector";
 import { Plane } from "./Plane";
+import { Line } from "./Line";
 
 export class LineSegment
 {

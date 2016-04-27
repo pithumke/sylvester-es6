@@ -110,12 +110,6 @@ Object.defineProperty(exports, "makeLookAt", {
 		return _Utils.makeLookAt;
 	}
 });
-Object.defineProperty(exports, "makeOrtho", {
-	enumerable: true,
-	get: function get() {
-		return _Utils.makeOrtho;
-	}
-});
 Object.defineProperty(exports, "makePerspective", {
 	enumerable: true,
 	get: function get() {

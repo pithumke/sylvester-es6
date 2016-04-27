@@ -16,7 +16,6 @@ export { Vertex } from "./Vertex";
 export {
 	mht,
 	makeLookAt,
-	makeOrtho,
 	makePerspective,
 	makeFrustum,
 	makeOrtho

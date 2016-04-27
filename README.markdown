@@ -4,12 +4,19 @@ Fork of the famous Sylvester vector, matrix and geometry library.
 
 Please have a look at the [original author's website](http://sylvester.jcoglan.com) for documentation and credits.
 
-Major modifications:
+## Modifications:
   - Rewriting in ES6
   - Including [glUtils.js](https://github.com/mdn/webgl-examples/blob/gh-pages/tutorial/glUtils.js) (see [MDN tutorial](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Tutorial/Adding_2D_content_to_a_WebGL_context) for details)
   - Removing shorthand notations ($M, $L, ...)
+  - Replaced "Line.Segment" with "LineSegment"
+  - Replaced "Polygon.Vertex" with "Vertex"
+  - Separate export for constant "precision"
   - Replacing "create"-functions with class constructors
   - Putting curly braces on the next line where ever ES6 allows it.
+
+## Notes
+  - The test "toRightTriangular" of class "Matrix" is failing, commented out for now
+  - An assertion in the test "intersectionWith" of class "Line" fails sporadically (line number 58), commented out for now
 
 ## License
 
