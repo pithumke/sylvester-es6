@@ -1,3 +1,7 @@
+"use strict";
+
+import { Vector } from "./Vector";
+import { Matrix } from "./Matrix";
 
 //From glUtils.js
 export function mht(m)
