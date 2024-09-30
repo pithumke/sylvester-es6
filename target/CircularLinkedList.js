@@ -21,7 +21,7 @@ var CircularLinkedList = exports.CircularLinkedList = function (_LinkedList) {
     function CircularLinkedList() {
         _classCallCheck(this, CircularLinkedList);
 
-        return _possibleConstructorReturn(this, Object.getPrototypeOf(CircularLinkedList).apply(this, arguments));
+        return _possibleConstructorReturn(this, (CircularLinkedList.__proto__ || Object.getPrototypeOf(CircularLinkedList)).apply(this, arguments));
     }
 
     _createClass(CircularLinkedList, [{

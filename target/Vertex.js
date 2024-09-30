@@ -25,7 +25,7 @@ var Vertex = exports.Vertex = function (_Vector) {
     function Vertex(point) {
         _classCallCheck(this, Vertex);
 
-        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Vertex).call(this, point));
+        var _this = _possibleConstructorReturn(this, (Vertex.__proto__ || Object.getPrototypeOf(Vertex)).call(this, point));
 
         _this.setElements(point);
         if (_this.elements.length === 2) {

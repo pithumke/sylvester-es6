@@ -5,7 +5,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.mht = mht;
 exports.makeLookAt = makeLookAt;
-exports.makeOrtho = makeOrtho;
 exports.makePerspective = makePerspective;
 exports.makeFrustum = makeFrustum;
 exports.makeOrtho = makeOrtho;
@@ -50,18 +49,6 @@ function makeLookAt(ex, ey, ez, cx, cy, cz, ux, uy, uz) {
 
     var t = new _Matrix.Matrix([[1, 0, 0, -ex], [0, 1, 0, -ey], [0, 0, 1, -ez], [0, 0, 0, 1]]);
     return m.x(t);
-}
-
-//From glUtils.js
-//
-// glOrtho
-//
-function makeOrtho(left, right, bottom, top, znear, zfar) {
-    var tx = -(right + left) / (right - left);
-    var ty = -(top + bottom) / (top - bottom);
-    var tz = -(zfar + znear) / (zfar - znear);
-
-    return new _Matrix.Matrix([[2 / (right - left), 0, 0, tx], [0, 2 / (top - bottom), 0, ty], [0, 0, -2 / (zfar - znear), tz], [0, 0, 0, 1]]);
 }
 
 //From glUtils.js
