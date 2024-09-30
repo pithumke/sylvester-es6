@@ -64,26 +64,6 @@ export function makeLookAt(ex, ey, ez,
 
 //From glUtils.js
 //
-// glOrtho
-//
-export function makeOrtho(left, right,
-                          bottom, top,
-                          znear, zfar)
-{
-    var tx = -(right+left)/(right-left);
-    var ty = -(top+bottom)/(top-bottom);
-    var tz = -(zfar+znear)/(zfar-znear);
-
-    return new Matrix([
-                [2/(right-left), 0, 0, tx],
-                [0, 2/(top-bottom), 0, ty],
-                [0, 0, -2/(zfar-znear), tz],
-                [0, 0, 0, 1]
-    ]);
-}
-
-//From glUtils.js
-//
 // gluPerspective
 //
 export function makePerspective(fovy, aspect, znear, zfar)
